@@ -1,6 +1,6 @@
 classdef RealTermHandleClass < handle
 
-    properties (Access = protected)
+    properties (Access = public)
         
         % Properties
         ComPort = 'Nan';
@@ -22,7 +22,12 @@ classdef RealTermHandleClass < handle
                 else error('Invalid argument');
                 end
             end
-        end 
+        end
+
+        % Writes string to the Com Port
+        function void = writetocomport(thisRealTerm, stringValue)
+            invoke(thisRealTerm.Hrealterm, 'putstring', stringValue); % Send the charValue to the Com Port
+        end
 
         % Get data function
         function data = getdata(thisRealTerm)
