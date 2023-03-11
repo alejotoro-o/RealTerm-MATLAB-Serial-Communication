@@ -5,3 +5,5 @@ The RealTermHandleClass allows to create a [RealTerm](https://sourceforge.net/pr
 * RealTermHandleClass: Class that allows the creation of an object than handle serial comunication with an external device using RealTerm.
 * matlab_example: Example using the RealTermHandleClass to plot data comming from the external device.
 * arduino_serial: Example of arduino code to send data via serial.
+
+[![View RealTerm MATLAB Serial Comms on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://la.mathworks.com/matlabcentral/fileexchange/120478-realterm-matlab-serial-comms)
