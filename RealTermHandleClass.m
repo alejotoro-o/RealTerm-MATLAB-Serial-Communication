@@ -83,7 +83,7 @@ classdef RealTermHandleClass < handle
                 thisRealTerm.FilePointer = 0;                               % Set FilePointer to start of file
                 isOpen=1;
             else
-                disconnect(thisRealTerm);                                   % TRUE if COM Port didnt open close realterm server
+                disconnect(thisRealTerm.Hrealterm);                                   % TRUE if COM Port didnt open close realterm server
                 isOpen=0;
             end
         end % opencomport
